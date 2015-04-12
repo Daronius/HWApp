@@ -4,16 +4,30 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class MainActivity extends Activity {
 
+	private String token;
+	private TextView start_status;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        token = "";
+        
+        start_status = (TextView) findViewById(R.id.start_status);
+        start_status.setText(R.string.start_login_check);
+        
+        if(token.isEmpty()) {
+        	setContentView(R.layout.activity_main);
+        } else {
+        	start_status.setText("Token: " + token);
+        }
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
