@@ -1,6 +1,7 @@
 package com.example.hwapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -9,7 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-	private String token;
+	private String token = "";
 	private TextView start_status;
 	
     @Override
@@ -17,15 +18,26 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        token = "";
-        
         start_status = (TextView) findViewById(R.id.start_status);
         start_status.setText(R.string.start_login_check);
         
-        if(token.isEmpty()) {
-        	setContentView(R.layout.activity_main);
-        } else {
-        	start_status.setText("Token: " + token);
+        if (token.isEmpty()) {
+        	Intent loginIntent = new Intent(MainActivity.this, LoginActivity.class);
+        	startActivityForResult(loginIntent, 1);
+        }
+
+    }
+    
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        if (requestCode == 1) {
+            if(resultCode == RESULT_OK){
+                this.token=data.getStringExtra("token");
+                start_status.setText("Token: " + token);
+            }
+            if (resultCode == RESULT_CANCELED) {
+                //Write your code if there's no result
+            }
         }
     }
 
@@ -47,4 +59,12 @@ public class MainActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+	public String getToken() {
+		return token;
+	}
+
+	public void setToken(String Token) {
+		this.token = Token;
+	}
 }
