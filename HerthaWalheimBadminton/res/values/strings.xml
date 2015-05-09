@@ -3,4 +3,12 @@
 
     <string name="app_name">Hertha Walheim Badminton</string>
 
+    <string name="newsListeEdit">Edit</string>
+
+    <string name="newsListeDelete">Delete</string>
+
+    <string name="createNewNews">Create</string>
+
+    <string name="editTextHint">Listen Namen eingeben</string>
+
 </resources>

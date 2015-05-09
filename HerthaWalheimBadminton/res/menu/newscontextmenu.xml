@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/itemNewsEdit" android:title="@string/newsListeEdit"></item>
+    <item android:id="@+id/itemNewsDelete" android:title="@string/newsListeDelete"></item>
+    
+
+</menu>
