@@ -9,5 +9,9 @@
     <string name="password">Passwort</string>
     <string name="login_button">Anmelden</string>
     <string name="login_input_error">Fehler bei der Eingabe</string>
+    <string name="login_fail">Anmeldung fehlgeschlagen</string>
+    <string name="login_ok">Anmeldung erfolgreich</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

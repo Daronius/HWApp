@@ -25,18 +25,16 @@ public class MainActivity extends Activity {
         	Intent loginIntent = new Intent(MainActivity.this, LoginActivity.class);
         	startActivityForResult(loginIntent, 1);
         }
-
     }
     
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
         if (requestCode == 1) {
             if(resultCode == RESULT_OK){
-                this.token=data.getStringExtra("token");
-                start_status.setText("Token: " + token);
+                token = data.getStringExtra("token");
+                start_status.setText(R.string.login_ok);
             }
             if (resultCode == RESULT_CANCELED) {
-                //Write your code if there's no result
+                start_status.setText(R.string.login_fail);
             }
         }
     }
