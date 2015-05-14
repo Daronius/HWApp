@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Badmintunity</string>
+
+    <string name="newsRefresh">Refresh</string>
+
+    <string name="newsAdd">Add News</string>
+
+    <string name="news_editTextTopic_hint">Enter Topic</string>
+
+    <string name="news_editTextContent_hint">Enter News Content</string>
+
+    <string name="news_buttonAddNews">Add News</string>
+    <string name="news_creatingNews">Erstelle News</string>
+    <string name="news_deletingNews">Lösche News</string>
+    <string name="news_loadingNews">News werden geladen</string>
+    <string name="news_delete">Löschen</string>
+
+</resources>

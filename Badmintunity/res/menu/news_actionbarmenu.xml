@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/itemAddNews"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="always"
+        android:title="@string/newsAdd"/><item
+        android:id="@+id/itemRefreshNews"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/newsRefresh"/>
+    
+
+</menu>
