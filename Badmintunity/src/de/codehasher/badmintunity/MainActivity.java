@@ -13,6 +13,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import de.codehasher.badmintunity.news.AsyncListViewLoader;
+import de.codehasher.badmintunity.news.NewsAddActivity;
+import de.codehasher.badmintunity.user.User;
+import de.codehasher.badmintunity.user.UserLoginActivity;
 
 public class MainActivity extends Activity {
 	
@@ -20,14 +23,20 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		registerForContextMenu((ListView) findViewById(R.id.listViewNews));
-		getNews();
 	}
 
 	@Override
 	protected void onStart() {
 		super.onStart();
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+
+		if(!User.getInstance().isUserLoggedIn()){
+			Intent loginUserIntent = new Intent(this, UserLoginActivity.class);
+			startActivity(loginUserIntent);	
+		}
+
+		registerForContextMenu((ListView) findViewById(R.id.listViewNews));
+		getNews();
 	}
 
 	@Override

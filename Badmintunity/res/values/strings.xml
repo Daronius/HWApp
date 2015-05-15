@@ -16,5 +16,11 @@
     <string name="news_deletingNews">Lösche News</string>
     <string name="news_loadingNews">News werden geladen</string>
     <string name="news_delete">Löschen</string>
+    <string name="user_login_button">Anmelden</string>
+    <string name="user_login_email_hint">E-Mail</string>
+    <string name="user_login_password_hint">Passwort</string>
+    <string name="user_login_login_text">Benutzer wird angemeldet</string>
+    <string name="user_login_error_text">Fehler bei der Anmeldung</string>
+    <string name="user_login_input_error_text">Fehler in der Eingabe</string>
 
 </resources>

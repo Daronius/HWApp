@@ -20,20 +20,24 @@ public final class R {
         public static final int RelativeLayout1=0x7f070001;
         public static final int editTextContent=0x7f070003;
         public static final int editTextTopic=0x7f070002;
-        public static final int itemAddNews=0x7f070009;
-        public static final int itemDeleteNews=0x7f07000c;
-        public static final int itemRefreshNews=0x7f07000a;
-        public static final int itemSafeNews=0x7f07000b;
+        public static final int itemAddNews=0x7f07000c;
+        public static final int itemDeleteNews=0x7f07000f;
+        public static final int itemRefreshNews=0x7f07000d;
+        public static final int itemSafeNews=0x7f07000e;
         public static final int listViewNews=0x7f070000;
         public static final int textViewContent=0x7f070008;
         public static final int textViewDate=0x7f070007;
         public static final int textViewNewsId=0x7f070005;
         public static final int textViewTopic=0x7f070006;
+        public static final int user_login_button=0x7f07000b;
+        public static final int user_login_email=0x7f070009;
+        public static final int user_login_password=0x7f07000a;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int news_add_layout=0x7f030001;
         public static final int news_entry_layout=0x7f030002;
+        public static final int user_login_layout=0x7f030003;
     }
     public static final class menu {
         public static final int news_actionbarmenu=0x7f060000;
@@ -51,6 +55,12 @@ public final class R {
         public static final int news_editTextContent_hint=0x7f040004;
         public static final int news_editTextTopic_hint=0x7f040003;
         public static final int news_loadingNews=0x7f040008;
+        public static final int user_login_button=0x7f04000a;
+        public static final int user_login_email_hint=0x7f04000b;
+        public static final int user_login_error_text=0x7f04000e;
+        public static final int user_login_input_error_text=0x7f04000f;
+        public static final int user_login_login_text=0x7f04000d;
+        public static final int user_login_password_hint=0x7f04000c;
     }
     public static final class style {
         /** 

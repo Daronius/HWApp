@@ -8,7 +8,6 @@
         android:minSdkVersion="17"
         android:targetSdkVersion="22" />
 
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -26,7 +25,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="de.codehasher.badmintunity.NewsAddActivity"
+            android:name="de.codehasher.badmintunity.news.NewsAddActivity"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name="de.codehasher.badmintunity.user.UserLoginActivity"
             android:parentActivityName=".MainActivity" >
         </activity>
     </application>
